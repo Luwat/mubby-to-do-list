@@ -12,7 +12,7 @@ body {
 }
 
 .head {
-    height: 70vh;
+    height: 40vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -23,7 +23,6 @@ body {
 
 .head h1{
     font-weight: lighter;
-    font-size: 40px;
 }
 .container {
     display: flex;
@@ -33,10 +32,14 @@ body {
     align-items: center;
 }
 .flex-container{
+    margin: 50px auto;
     width: 100%;
     min-height: 100px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 .new-task {
@@ -72,7 +75,7 @@ button {
 }
 
 button:hover {
-    background-color: #58697a;
+    background-color: #1862ac;
     border: solid #0861b9 2px;
 }
 
