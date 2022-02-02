@@ -11,29 +11,48 @@ body {
 
 }
 
+.head {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    
+}
+
+.head h1{
+    font-weight: lighter;
+    font-size: 40px;
+}
 .container {
     display: flex;
-    height: 80%;
+    background-color: #ffffff;
+    min-height: 60vh;
     justify-content: center;
     align-items: center;
 }
 .flex-container{
-    width: 40%;
-    background-color: #ffffff;
+    width: 100%;
     min-height: 100px;
-    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.new-task {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
 }
 
 .new-task input{
-    margin-top: 35px;
-    margin-right: 20px;
-    padding-left: 20px;
+    padding-left: 10px;
     height: 40px;
-    width: 300px;
     border: solid #066acd 2px;
-    border-radius: 5px;
     font-size: larger;
     color: #066acd;
+    flex: 2 1 auto;
 }
 
 .new-task input:focus {
@@ -48,12 +67,25 @@ button {
     width: 100px;
     background-color: #066acd;
     border: solid #066acd 2px;
-    border-radius: 5px;
     color: #ffffff;
     font-size: larger;
 }
 
 button:hover {
-    background-color: #0861b9;
+    background-color: #58697a;
     border: solid #0861b9 2px;
+}
+
+.footer {
+    background-color: #1f2937;
+    height: 30vh;
+    color: blanchedalmond;
+    font-size: larger;
+    font-weight: lighter;
+    padding-top: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: blanchedalmond;
 }
