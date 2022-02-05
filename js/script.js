@@ -3,12 +3,14 @@ document.querySelector("#add").onclick = function() {
         alert("Please Enter Task");
     } else {
         document.querySelector(".tasks").innerHTML += `
-        <div >
-            <input type="checkbox">
-            <span>
-                ${document.querySelector("#text").value}
-            </span>
-            <button class="delete" value="delete">Delete</button>
+        <div class="task">
+            <div class="lists">
+                <input type="checkbox">
+                <span>
+                    ${document.querySelector("#text").value}
+                </span>
+                <button class="delete" value="delete">Delete</button>
+            </div>
         </div>
         `;
 
