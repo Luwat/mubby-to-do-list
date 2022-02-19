@@ -1,16 +1,16 @@
-document.querySelector("#add").onclick = function() {
+document.querySelector("#add").onclick = function () {
     if (document.querySelector("#text").value.length == 0){
         alert("Please Enter Task");
     } else {
         document.querySelector(".tasks").innerHTML += `
         <div class="task">
-            <div class="lists">
-                <input type="checkbox">
+            <div class=here>
+                <input type="checkbox" id="checked">
                 <span>
                     ${document.querySelector("#text").value}
                 </span>
-                <button class="delete" value="delete">Delete</button>
             </div>
+            <button class="delete" value="delete">Delete</button>
         </div>
         `;
 

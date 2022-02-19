@@ -12,7 +12,7 @@ body {
 }
 
 .head {
-    height: 40vh;
+    height: 40%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -27,9 +27,9 @@ body {
 .container {
     display: flex;
     background-color: #ffffff;
-    min-height: 60vh;
+    min-height: 40%;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 .flex-container{
     margin: 50px auto;
@@ -37,7 +37,7 @@ body {
     min-height: 100px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: stretch;
     align-items: center;
     gap: 20px;
 }
@@ -81,7 +81,7 @@ button:hover {
 
 .footer {
     background-color: #1f2937;
-    height: 30vh;
+    height: 20%;
     color: blanchedalmond;
     font-size: larger;
     font-weight: lighter;
@@ -91,4 +91,32 @@ button:hover {
 a {
     text-decoration: none;
     color: blanchedalmond;
+}
+
+.tasks {
+    width: 50%;
+    color: blanchedalmond;
+
+}
+
+.task {
+    background-color: #1f2937;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: larger;
+    margin: 10px auto;
+}
+
+.here {
+    margin: auto 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#checked {
+    border: 2px solid #066acd;
+    height: 20px;
+    width: 20px;
 }
