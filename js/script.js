@@ -1,18 +1,22 @@
-document.querySelector("#add").onclick = function () {
-    if (document.querySelector("#text").value.length == 0){
+let add = document.querySelector("#add")
+let task = document.querySelector(".tasks")
+let text = document.querySelector("#text")
+
+const addTask = () => {
+    if (text.value.length == 0){
         alert("Please Enter Task");
     } else {
-        document.querySelector(".tasks").innerHTML += `
-        <div class="task">
-            <div class=here>
-                <input type="checkbox" id="checked">
-                <span>
-                    ${document.querySelector("#text").value}
-                </span>
+        task.innerHTML += `
+            <div class="task">
+                <div class=here>
+                    <input type="checkbox" id="checked">
+                    <span>
+                        ${text.value}
+                    </span>
+                </div>
+                <button class="delete" value="delete">Delete</button>
             </div>
-            <button class="delete" value="delete">Delete</button>
-        </div>
-        `;
+            `;
 
         let taskNow = document.querySelectorAll(".delete");
         for(let i=0; i<taskNow.length; i++){
@@ -22,3 +26,5 @@ document.querySelector("#add").onclick = function () {
         }
     }
 }
+
+add.addEventListener('click', addTask)
